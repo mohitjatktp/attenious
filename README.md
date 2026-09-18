@@ -7,12 +7,16 @@ Landing page for Attenious — adaptive attention & focus games for kids ages 4�
 ## Files
 
 - `index.html` — the complete landing page (hero, interactive adaptive puzzle demo, features, sample report, waitlist form, FAQ)
-- `logo.png` — the Attenious logo
 - `robots.txt` — crawler rules
+- `netlify.toml` — Netlify build config: fetches `logo.png` from the [v1.0.0 release asset](https://github.com/mohitjatktp/attenious/releases/tag/v1.0.0) at build time and publishes the repo as a static site
+
+## Logo
+
+The logo lives as a release asset (`logo.png` in v1.0.0), downloaded automatically during the Netlify build. To replace it: upload a new asset to a release and update the URL in `netlify.toml` — or simply commit a `logo.png` to the repo root and remove the `command` line from `netlify.toml`.
 
 ## Deploy
 
-Any static host works. On Netlify: **Add new site → Import an existing project → GitHub → pick this repo** — no build settings needed.
+On Netlify: **Add new site → Import an existing project → GitHub → pick this repo** — no build settings needed (they come from `netlify.toml`).
 
 ## Notes
 
