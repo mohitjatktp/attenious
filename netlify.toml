@@ -1,0 +1,3 @@
+[build]
+  command = "curl -fsSL https://github.com/mohitjatktp/attenious/releases/download/v1.0.0/logo.png -o logo.png"
+  publish = "."
